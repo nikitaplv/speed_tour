@@ -1,0 +1,43 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: speed_tour_development
+  pool: 5
+  host: localhost
+  username: postgres
+  password: sql
+  port: 5432
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: speed_tour_test
+  pool: 5
+  host: localhost
+  username: postgres
+  password: sql
+  port: 5432
+staging:
+  adapter: postgresql
+  encoding: utf8
+  database: speed_tour_staging
+  pool: 5
+  host: localhost
+  username: postgres
+  password: sql
+  port: 5432
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: speed_tour_production
+  pool: 1
+  reaping_frequency: 10
+  host: localhost
+  username: postgres
+  password: sql
+  port: 5432
